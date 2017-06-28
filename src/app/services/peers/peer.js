@@ -17,7 +17,7 @@ const TRANSACTION_HEADER_VERSION = require('../../../../package.json').version
 
 app.factory('$peer', ($http, $log, $q, $timeout) => {
   return class $peer {
-    constructor ({ host, port = 4001, ssl = false }) {
+    constructor ({ host, port = 4010, ssl = false }) {
       this.host = host
       this.port = port
       this.ssl = !!ssl
